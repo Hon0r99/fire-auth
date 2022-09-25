@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: all ease-in .2s;
+
+  &:hover {
+    color: #967E76;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 370px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #B7C4CF;
+  border-radius: 15px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.input {
+  margin: 6px 0;
+  padding: 5px 8px;
+  border: 1px solid #D7C0AE;
+  border-radius: 6px;
+  
+  &:focus {
+    border: 1px solid #967E76;
+    outline: none;
+  }
+}
+
+.btn {
+  margin: 6px 0;
+  padding: 5px 8px;
+  width: 100%;
+  background: #D7C0AE;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all ease-in .2s;
+
+  &:hover {
+    background: #967E76;
+    color: #fff;
+  }
+}

@@ -1,0 +1,38 @@
+<div class="section">
+  <h3>Sign Up</h3>
+  <div class="section__form">
+    <input
+    type="email"
+    class="input"
+    placeholder="Email Address"
+    #userEmail
+    required
+  />
+  <input
+    type="password"
+    class="input"
+    placeholder="Password"
+    #userPwd
+    required
+  />
+  <input
+    type="button"
+    class="btn"
+    value="Sign Up"
+    (click)="authService.SignUp(userEmail.value, userPwd.value)"
+  />
+  <span>Or</span>
+<!-- Continue with Google -->
+  <button
+    type="button"
+    class="btn"
+    (click)="authService.GoogleAuth()"
+  >
+    Continue with Google
+  </button>
+  </div>
+  <div class="redirects">
+    <br>
+    <span>Already have an account?<a class="redirect" routerLink="/sign-in"> Sign Up</a></span>
+  </div>
+</div>
